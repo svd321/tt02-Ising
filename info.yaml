@@ -16,7 +16,7 @@ project:
 documentation: 
   author:       "Seppe Van Dyck"      # Your name
   title:        "Ising Spin"      # Project title
-  description:  "Simulate an Ising spin in an external field."      # Short description of what your project does
+  description:  "Simulate a single spin in a 1D Ising model with 2 neighbours and an external field."      # Short description of what your project does
   how_it_works: "It runs the Metropolis-Hastings monte-carlo algorithm to simulate an Ising spin in a linear chain with two neighbours and an external field."      # Longer description of how the project works
   how_to_test:  "Disable field and make the neighbours unequal, now the spin will flip every clock cycle."      # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
   external_hw:  ""      # Describe any external hardware needed
