@@ -3,8 +3,9 @@
 # What is this project about?
 
 This project implements a monte-carlo simulation of a single spin of a 1D [Ising model](https://en.wikipedia.org/wiki/Ising_model).
+The idea is that multiple of these circuits could be chained together to simulate a 1D Ising model with multiple spins.
 
-The steps of the Metropolis-Hastings alogrithm are run on-chip, so no external random numbers or lookup tables are needed. 
+The steps of the Metropolis-Hastings algorithm are run on-chip, so no external random numbers or lookup tables are needed. 
 
 All parameters, programming the environment (neighbour spins, coupling constants and temperature) are input through the 7 inputs, together with the clock.
 
