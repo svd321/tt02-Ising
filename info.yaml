@@ -21,23 +21,23 @@ documentation:
   how_to_test:  "Disable field and make the neighbours unequal, now the spin will flip every clock cycle."      # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
   external_hw:  ""      # Describe any external hardware needed
   language:     "wokwi" # other examples include Verilog, Amaranth, VHDL, etc
-  doc_link:     ""      # URL to longer form documentation, eg the README.md in your repository
-  clock_hz:     2       # Clock frequency in Hz (if required)
-  picture:      ""      # relative path to a picture in your repository
+  doc_link:     "README.md"      # URL to longer form documentation, eg the README.md in your repository
+  clock_hz:     20       # Clock frequency in Hz (if required)
+  picture:      "Overview.png"      # relative path to a picture in your repository
   inputs:               # a description of what the inputs do
-    - clock
-    - T0
-    - T1
-    - T2
-    - N1
-    - N2
-    - J
-    - H
+    - clock, clock input.
+    - T0, LSB of the 3-bit temperature representation.
+    - T1, Middle bit of the 3-bit temperature.
+    - T2, MSB of the 3-bit temperature.
+    - N1, Value of neighbour 1 (up/1 or down/0).
+    - N2, Value of neighbour 2 (up/1 or down/0).
+    - J, The sign of the NN coupling constant J (+/1 or -/0).
+    - H, Value of the coupling to the external field H (1 or 0).
   outputs:
-    - segment a         # a description of what the outputs do
+    - segment a, Value of the spin (1 if spin is up).
     - none
     - none
-    - segment d
+    - segment d, Inverted value of the spin (1 if spin is down).
     - none
     - none
     - none
