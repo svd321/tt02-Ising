@@ -8,7 +8,7 @@ The steps of the Metropolis-Hastings alogrithm are run on-chip, so no external r
 
 All parameters, programming the environment (neighbour spins, coupling constants and temperature) are input through the 7 inputs, together with the clock.
 
-For more details on this particular implementation can be found in the accompanying paper (coming soon).
+More details on this particular implementation can be found in the accompanying paper (coming soon).
 
 ![](Overview.png)
 
