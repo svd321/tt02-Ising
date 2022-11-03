@@ -12,6 +12,32 @@ More details on this particular implementation can be found in the accompanying 
 
 ![](Overview.png)
 
+## Inputs
+|Pin|Name|Function                                           |
+|--|-----|---------------------------------------------------|
+|0 |CLK  |Clock Input                                        |
+|1 |T0   |LSB of the 3-bit temperature value                 |
+|2 |T1   |Second bit of the temperature                      |
+|3 |T2   |MSB of the 3-bit temperature value                 |
+|4 |N1   |The value of neighbour 1 (up or down)              |
+|5 |N2   |The value of neighbour 2 (up or down)              |
+|6 |J    |The sign of the NN coupling constant J (+ or -)    |
+|7 |H    |The value of the external field coupling H (1 or 0)|
+
+## Outputs
+|Pin|Name|Function                     |
+|--|-----|-----------------------------|
+|0 |UP   |Indicates if the spin is UP  |
+|1 |/    |                             |
+|2 |/    |                             |
+|3 |DOWN |Indicates if the spin is DOWN|
+|4 |/    |                             |
+|5 |/    |                             |
+|6 |/    |                             |
+|7 |/    |                             |
+
+
+
 # What is Tiny Tapeout?
 
 TinyTapeout is an educational project that aims to make it easier and cheaper than ever to get your digital designs manufactured on a real chip!
