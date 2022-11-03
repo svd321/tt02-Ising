@@ -3,9 +3,14 @@
 # What is this project about?
 
 This project implements a monte-carlo simulation of a single spin of a 1D [Ising model](https://en.wikipedia.org/wiki/Ising_model).
+
 The steps of the Metropolis-Hastings alogrithm are run on-chip, so no external random numbers or lookup tables are needed. 
-All parameters, programming the environment (neighbour spins, coupling constants and temperature) are input through the 8 inputs.
+
+All parameters, programming the environment (neighbour spins, coupling constants and temperature) are input through the 7 inputs, together with the clock.
+
 For more details on this particular implementation can be found in the accompanying paper (coming soon).
+
+![](Overview.png)
 
 # What is Tiny Tapeout?
 
