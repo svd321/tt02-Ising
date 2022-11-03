@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 2798.1 1412.8" style="enable-background:new 0 0 2798.1 1412.8;" xml:space="preserve">
+<style type="text/css">
+	.st0{font-family:'ArialMT';}
+	.st1{font-size:42px;}
+	.st2{fill:#FFFFFF;}
+	.st3{opacity:0.98;}
+	.st4{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st5{fill:#FFFFFF;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:#000000;stroke-width:4;stroke-miterlimit:10;}
+	.st7{fill:none;stroke:#000000;stroke-width:2;}
+	.st8{fill-rule:evenodd;clip-rule:evenodd;}
+	.st9{fill:none;stroke:#000000;stroke-width:3;stroke-linecap:square;}
+	.st10{font-size:60.3795px;}
+	.st11{font-size:61px;}
+</style>
+<g>
+	<path d="M2607,53.8v1310H177V53.8H2607 M2611,49.8H173v1318h2438V49.8L2611,49.8z"/>
+</g>
+<text transform="matrix(1 0 0 1 27 659.7675)" class="st0 st1">CLK</text>
+<text transform="matrix(1 0 0 1 42 703.7675)" class="st0 st1">T0</text>
+<text transform="matrix(1 0 0 1 41.6423 747.4357)" class="st0 st1">T1</text>
+<text transform="matrix(1 0 0 1 41.6423 791.4357)" class="st0 st1">T2</text>
+<text transform="matrix(1 0 0 1 42.3625 835.3029)" class="st0 st1">N1</text>
+<text transform="matrix(1 0 0 1 42.5813 879.3029)" class="st0 st1">N2</text>
+<text transform="matrix(1 0 0 1 42 923.7675)" class="st0 st1">J</text>
+<text transform="matrix(1 0 0 1 41.4641 967.3026)" class="st0 st1">H</text>
+<g>
+	<g>
+		<rect x="322" y="1055.8" class="st2" width="275" height="275"/>
+		<path d="M595,1057.8v271H324v-271H595 M599,1053.8H320v279h279V1053.8L599,1053.8z"/>
+	</g>
+	<text transform="matrix(1 0 0 1 381.2832 1193.2675)"><tspan x="0" y="0" class="st3 st0 st1">Stage I:  </tspan><tspan x="44.3" y="50.4" class="st3 st0 st1"> ΔE</tspan></text>
+</g>
+<polyline class="st4" points="348,1082.9 348,967.8 348,967.8 107,967.8 "/>
+<polyline class="st4" points="404.5,1082.9 404.5,923.8 405,923.8 107,923.8 "/>
+<polyline class="st4" points="461,1082.9 461,879.8 461,879.8 107,879.8 "/>
+<polyline class="st4" points="517.5,1082.9 517.5,835.8 518,835.8 107,835.8 "/>
+<line class="st4" x1="574" y1="1082.9" x2="574" y2="1025.8"/>
+<g>
+	<g>
+		<rect x="703" y="1056.8" class="st2" width="275" height="275"/>
+		<path d="M976,1058.8v271H705v-271H976 M980,1054.8H701v279h279V1054.8L980,1054.8z"/>
+	</g>
+	<text transform="matrix(1 0 0 1 756.4487 1194.2675)"><tspan x="0" y="0" class="st3 st0 st1">Stage II:  </tspan><tspan x="16" y="50.4" class="st3 st0 st1"> A(μ, ν)</tspan></text>
+</g>
+<line class="st5" x1="573.9" y1="1193.3" x2="718.9" y2="1193.3"/>
+<polyline class="st4" points="746.3,1082.4 746.3,791.8 746,791.8 107,791.8 "/>
+<polyline class="st4" points="840.8,1082.4 840.8,747.8 840,747.8 107,747.8 "/>
+<polyline class="st4" points="935.3,1082.4 935.3,703.8 935,703.8 107,703.8 "/>
+<g>
+	<g>
+		<rect x="1291" y="442.8" class="st2" width="302" height="266"/>
+		<path d="M1591,444.8v262h-298v-262H1591 M1595,440.8h-306v270h306V440.8L1595,440.8z"/>
+	</g>
+	<text transform="matrix(1 0 0 1 1401.1484 541.7675)"><tspan x="0" y="0" class="st3 st0 st1">4-bit </tspan><tspan x="-70" y="50.4" class="st3 st0 st1">Comparator</tspan><tspan x="-0.6" y="100.8" class="st3 st0 st1">R&lt;A</tspan></text>
+</g>
+<line class="st4" x1="1328.7" y1="482.7" x2="1089" y2="482.7"/>
+<line class="st4" x1="1329.4" y1="670.4" x2="1152" y2="670.4"/>
+<line class="st5" x1="935.6" y1="1193.7" x2="1152" y2="1193.7"/>
+<line class="st4" x1="1152" y1="669.8" x2="1152" y2="1194.5"/>
+<rect x="320" y="135.8" class="st6" width="835" height="286"/>
+<text transform="matrix(1 0 0 1 358.126 278.7674)" class="st0 st1">Pseudorandom 4-bit Number Generation</text>
+<line class="st5" x1="262.8" y1="362.2" x2="407.8" y2="362.2"/>
+<polyline class="st4" points="263.4,362.5 263.4,660.3 1044,659.8 107,659.8 "/>
+<line class="st4" x1="1089.1" y1="483.8" x2="1089.1" y2="393"/>
+<text transform="matrix(1 0 0 1 1073.5781 381.4247)" class="st0 st1">R</text>
+<text transform="matrix(1 0 0 1 1250.6604 476.627)" class="st0 st1">R</text>
+<text transform="matrix(1 0 0 1 1251.8187 660.6271)" class="st0 st1">A</text>
+<g>
+	<path class="st7" d="M2012.7,530.3H2127 M1831.6,484.6h-116 M1836.1,576H1575"/>
+	<g>
+		<path class="st8" d="M1803.6,608c-7.3,12.1-10.3,13.7-10.3,13.7h-16.7l9.1-11.1c0,0,25.9-32,25.9-80.3s-25.9-80.3-25.9-80.3
+			l-9.1-11.1h16.7c3.6,4.3,6.5,7.6,10.1,13.7c8.6,14.2,21.9,41.3,21.9,77.7C1825.3,566.6,1812,593.7,1803.6,608z"/>
+		<path class="st8" d="M1802.9,438.9l9.1,11.1c0,0,25.9,32,25.9,80.3s-25.9,80.3-25.9,80.3l-9.1,11.1h78.4c11,0,35.2,0.1,62.3-11
+			c27.1-11.1,57.3-33.6,80.9-77.1l-6-3.3l6-3.3c-47.1-87.2-121.4-88.1-143.1-88.1H1802.9z M1829.7,452.6h51.6
+			c21.4,0,83.6-0.6,127.9,77.7c-21.8,38.5-48.1,58-71.9,67.7c-24.5,10-45,10-56,10h-51.4c8.6-14.2,21.7-41.4,21.7-77.7
+			C1851.6,493.8,1838.3,466.8,1829.7,452.6z"/>
+	</g>
+</g>
+<g id="layer1">
+	<g id="g4867">
+		<rect id="rect1311" x="2196.7" y="450.8" class="st9" width="246.1" height="332.1"/>
+		<path id="path3085" class="st7" d="M2194.6,530.6h-69.1"/>
+		<path id="path3087" class="st7" d="M2194.6,703.1H1648"/>
+		<path id="path3089_2_" class="st7" d="M2514,703.1"/>
+		<path id="path3089_1_" class="st7" d="M2444.9,703.1"/>
+		<path id="path3091" class="st7" d="M2444.9,530.6H2695"/>
+	</g>
+	<path id="path3081" class="st7" d="M2379.3,668.6h41"/>
+	<text transform="matrix(1.0009 0 0 1 2219.1738 551.1444)" class="st0 st10">D</text>
+	<text transform="matrix(1.0009 0 0 1 2375.9395 552.121)" class="st0 st10">Q</text>
+	<text transform="matrix(1.0009 0 0 1 2375.584 724.6327)" class="st0 st10">Q</text>
+	<text transform="matrix(1.0009 0 0 1 2219.1738 724.6327)" class="st0 st10">E</text>
+</g>
+<line class="st4" x1="1648" y1="759" x2="1648" y2="702.4"/>
+<line class="st7" x1="1648.9" y1="759.5" x2="1175" y2="759.5"/>
+<line class="st4" x1="1043.7" y1="759.8" x2="1043.7" y2="659.2"/>
+<path class="st7" d="M1128,759.8c0-13.3,10.7-24,24-24s24,10.7,24,24"/>
+<line class="st7" x1="1129" y1="759.7" x2="1042.6" y2="759.7"/>
+<line class="st4" x1="1715.4" y1="485.5" x2="1715.4" y2="381.8"/>
+<line class="st7" x1="2514" y1="381.5" x2="1714.4" y2="381.5"/>
+<line class="st4" x1="2513.6" y1="1026.8" x2="2513.6" y2="380.3"/>
+<line class="st7" x1="2514.4" y1="1026.3" x2="1176" y2="1026.3"/>
+<path class="st7" d="M1127.8,1026.8c0-13.3,10.7-24,24-24c13.3,0,24,10.7,24,24"/>
+<path class="st7" d="M911.7,1026.4c0-13.3,10.7-24,24-24s24,10.7,24,24"/>
+<path class="st7" d="M816.7,1026.4c0-13.3,10.7-24,24-24s24,10.7,24,24"/>
+<path class="st7" d="M722.7,1026.4c0-13.3,10.7-24,24-24s24,10.7,24,24"/>
+<line class="st7" x1="1129" y1="1026.7" x2="959" y2="1026.7"/>
+<line class="st7" x1="913" y1="1026.8" x2="864" y2="1026.8"/>
+<line class="st7" x1="818" y1="1026.8" x2="770" y2="1026.8"/>
+<line class="st7" x1="724" y1="1026.8" x2="574" y2="1026.8"/>
+<g>
+	<circle cx="2513.5" cy="530.3" r="7"/>
+	<path d="M2513.5,523.8c3.6,0,6.5,2.9,6.5,6.5s-2.9,6.5-6.5,6.5s-6.5-2.9-6.5-6.5S2509.9,523.8,2513.5,523.8 M2513.5,522.8
+		c-4.1,0-7.5,3.4-7.5,7.5s3.4,7.5,7.5,7.5s7.5-3.4,7.5-7.5S2517.6,522.8,2513.5,522.8L2513.5,522.8z"/>
+</g>
+<text transform="matrix(1 0 0 1 2712.2285 550.9677)" class="st0 st11">S</text>
+</svg>
