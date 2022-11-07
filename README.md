@@ -2,14 +2,17 @@
 
 # What is this project about?
 
-This project implements a monte-carlo simulation of a single spin of a 1D [Ising model](https://en.wikipedia.org/wiki/Ising_model).
-The idea is that multiple of these circuits could be chained together to simulate a 1D Ising model with multiple spins.
+This project implements a monte-carlo simulation of 4 spins of a 1D [Ising model](https://en.wikipedia.org/wiki/Ising_model) in an external field.
+The idea is that N of these circuits could be chained together to simulate a 1D Ising model with 4N spins.
 
-The steps of the Metropolis-Hastings algorithm are run on-chip, so no external random numbers or lookup tables are needed. 
+My goal was to create a circuit that runs all steps of the Metropolis-Hastings algorithm, so no external lookup-tables or random numbers are needed. 
 
-All parameters, programming the environment (neighbour spins, coupling constants and temperature) are input through the 7 inputs, together with the clock.
+All external factors (neighbour spins, coupling constants and temperature) are input through the 7 inputs, together with the clock. The 7 segment display
+is used to represent the state of the mini-Ising chain.
 
-More details on this particular implementation can be found in the accompanying paper (coming soon).
+The below image gives an overview of the main parts of the circuit and how they are connected.
+
+This project started off in wokwi, as I have no experience with a HDL (or logic circuit design for that matter). Halfway through I realised it might have been better to use a HDL, but I was not sure I would make the deadline if I still had to learn verilog, so I managed to muscle through.
 
 ![](Overview.png)
 
@@ -22,22 +25,29 @@ More details on this particular implementation can be found in the accompanying 
 |3 |T2   |MSB of the 3-bit temperature value                 |
 |4 |N1   |The value of neighbour 1 (up or down)              |
 |5 |N2   |The value of neighbour 2 (up or down)              |
-|6 |J    |The sign of the NN coupling constant J (+ or -)    |
+|6 |J    |The sign of the NN coupling constant J (+1 or -1)  |
 |7 |H    |The value of the external field coupling H (1 or 0)|
 
 ## Outputs
-|Pin|Name|Function                     |
-|--|-----|-----------------------------|
-|0 |UP   |Indicates if the spin is UP  |
-|1 |/    |                             |
-|2 |/    |                             |
-|3 |DOWN |Indicates if the spin is DOWN|
-|4 |/    |                             |
-|5 |/    |                             |
-|6 |/    |                             |
-|7 |/    |                             |
+|Pin|Name |Function                     |
+|--|------|-----------------------------|
+|0 |S0    |Status of spin 0             |
+|1 |S1    |Status of spin 1             |
+|2 |S2    |Status of spin 2             |
+|3 |S3    |Status of spin 3             |
+|4 |N2    |Status of neighbour 2        |
+|5 |N1    |Status of neighbour 1        |
+|6 |/     |                             |
+|7 |MC_CLK|Indicates a MC step          |
 
+## Short Explanation
 
+## A note on units
+Every physics simulation is useless if its units are not addressed.
+* Temperature: Temperature is input as a 3-bit number (0-7), the unit of this input is 300K, so you can input between 0K and 2100K.
+* Energy: Energy is expressed in units kT at room temperature, which can be approximated by 25meV.
+* Nearest Neighbour coupling constant J: controlled by input 6, this coupling constants unit is that of energy.
+* External field coupling constant H: controlled by input 7, this parameter is also in energy units.
 
 # What is Tiny Tapeout?
 
