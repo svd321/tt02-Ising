@@ -40,8 +40,11 @@ This project started off in wokwi, as I have no experience with a HDL (or logic 
 |6 |/     |                             |
 |7 |MC_CLK|Indicates a MC step          |
 
-## Short Explanation
-
+## Quick Overview
+### 32-bit LFSR
+### Stage I: Calculating the energy change of the system
+### Stage II: Calculating the acceptance rate of the spin-flip
+### Other stuff
 ## A note on units
 Every physics simulation is useless if its units are not addressed.
 * Temperature: Temperature is input as a 3-bit number (0-7), the unit of this input is 300K, so you can input between 0K and 2100K.
@@ -49,7 +52,10 @@ Every physics simulation is useless if its units are not addressed.
 * Nearest Neighbour coupling constant J: controlled by input 6, this coupling constants unit is that of energy.
 * External field coupling constant H: controlled by input 7, this parameter is also in energy units.
 
-# What is Tiny Tapeout?
+## Chaining multiple units together
+The goal of this circuit was to create a part of a bigger Ising chain. Bigger chains can be created by connecting the neighbour inputs to the ouputs S0 and S3 of neighbouring circuits. In order to decrease correlations between different running circuits, it would be wise to either change the seed of the 32-bit LFSR or give each unit in the chain a different, random amount of clock cycles before actually runningthe simulation.
+
+## What is Tiny Tapeout?
 
 TinyTapeout is an educational project that aims to make it easier and cheaper than ever to get your digital designs manufactured on a real chip!
 
