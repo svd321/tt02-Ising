@@ -10,11 +10,7 @@ My goal was to create a circuit that runs all steps of the Metropolis-Hastings a
 All external factors (neighbour spins, coupling constants and temperature) are input through the 7 inputs, together with the clock. The 7 segment display
 is used to represent the state of the mini-Ising chain.
 
-The below image gives an overview of the main parts of the circuit and how they are connected.
-
 This project started off in wokwi, as I have no experience with a HDL (or logic circuit design for that matter). Halfway through I realised it might have been better to use a HDL, but I was not sure I would make the deadline if I still had to learn verilog, so I managed to muscle through.
-
-![](Overview.png)
 
 ## Inputs
 |Pin|Name|Function                                           |
@@ -41,6 +37,10 @@ This project started off in wokwi, as I have no experience with a HDL (or logic 
 |7 |MC_CLK|Indicates a MC step          |
 
 ## Quick Overview
+The below image gives an overview of the main parts of the circuit and how they are connected.
+
+![](Overview.png)
+
 ### 32-bit LFSR
 ### Stage I: Calculating the energy change of the system
 ### Stage II: Calculating the acceptance rate of the spin-flip
