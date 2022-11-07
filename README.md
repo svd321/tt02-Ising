@@ -2,7 +2,7 @@
 
 # What is this project about?
 
-This project implements a monte-carlo simulation of 4 spins of a 1D [Ising model](https://en.wikipedia.org/wiki/Ising_model) in an external field.
+This project implements a monte-carlo simulation of 4 spins of a 1D [Ising model](https://en.wikipedia.org/wiki/Ising_model) (or Ising chain) in an external field.
 The idea is that N of these circuits could be chained together to simulate a 1D Ising model with 4N spins.
 
 My goal was to create a circuit that runs all steps of the Metropolis-Hastings algorithm, so no external lookup-tables or random numbers are needed. 
@@ -53,7 +53,7 @@ Every physics simulation is useless if its units are not addressed.
 * External field coupling constant H: controlled by input 7, this parameter is also in energy units.
 
 ## Chaining multiple units together
-The goal of this circuit was to create a part of a bigger Ising chain. Bigger chains can be created by connecting the neighbour inputs to the ouputs S0 and S3 of neighbouring circuits. In order to decrease correlations between different running circuits, it would be wise to either change the seed of the 32-bit LFSR or give each unit in the chain a different, random amount of clock cycles before actually runningthe simulation.
+The goal of this project was to create a circuit that could be chained together to form a longer Ising chain. Bigger chains can be created by connecting the neighbour inputs N1 & N2 to the ouputs S0 and S3 of neighbouring units. In order to decrease correlations between different running circuits, it would be wise to either change the seed of the 32-bit LFSR or give each unit in the chain a different, random amount (several hundreds) of clock cycles before starting the simulation.
 
 ## What is Tiny Tapeout?
 
