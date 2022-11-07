@@ -16,9 +16,9 @@ project:
 documentation: 
   author:       "Seppe Van Dyck"      # Your name
   title:        "Ising Spin"      # Project title
-  description:  "Simulate a single spin in a 1D Ising model with 2 neighbours and an external field."      # Short description of what your project does
-  how_it_works: "It runs the Metropolis-Hastings monte-carlo algorithm to simulate an Ising spin in a linear chain with two neighbours and an external field."      # Longer description of how the project works
-  how_to_test:  "Disable field and make the neighbours unequal, now the spin will flip every clock cycle."      # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
+  description:  "Circuit that simulates 4 spins of an Ising chain in  an external field."      # Short description of what your project does
+  how_it_works: "It runs the Metropolis-Hastings monte-carlo algorithm to simulate 4 Ising spins in a linear chain with two external neighbours and an external field. Every monte-carlo step (10 clock cycles) a random number is created through a 32-bit LFSR and is compared to an 8-bit representations of the acceptance probability of a random spin flip."      # Longer description of how the project works
+  how_to_test:  "When you only enable one of the neighbours and leave everything else 0, the system will evolve into a ground state with every other spin pointing up."      # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
   external_hw:  ""      # Describe any external hardware needed
   language:     "wokwi" # other examples include Verilog, Amaranth, VHDL, etc
   doc_link:     "README.md"      # URL to longer form documentation, eg the README.md in your repository
@@ -34,12 +34,12 @@ documentation:
     - J, The sign of the NN coupling constant J (+/1 or -/0).
     - H, Value of the coupling to the external field H (1 or 0).
   outputs:
-    - segment a, Value of the spin (1 if spin is up).
+    - segment a, Spin 0 (1 if spin is up).
+    - segment b, Spin 1 (1 if spin is up).
+    - segment c, Spin 2 (1 if spin is up).
+    - segment d, Spin 3 (1 if spin is up).
+    - segment e, Neighbour 2 (1 if spin is up).
+    - segment f, Neighbour 1 (1 if spin is up).
     - none
-    - none
-    - segment d, Inverted value of the spin (1 if spin is down).
-    - none
-    - none
-    - none
-    - none
+    - segment h, blinks every Monte Carlo step.
 
