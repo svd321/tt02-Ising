@@ -40,15 +40,6 @@ This project started off in wokwi, as I have no experience with a HDL (or logic 
 |6 |/     |                             |
 |7 |MC_CLK|Indicates a MC step          |
 
-## Circuit Overview
-The below image gives an overview of the main parts of the circuit and how they are connected.
-
-![](Overview.png)
-
-### 32-bit LFSR
-### Stage I: Calculating the energy change of the system
-### Stage II: Calculating the acceptance rate of the spin-flip
-### Other stuff
 ## A note on units
 Every physics simulation is useless if its units are not addressed.
 * Temperature: Temperature is input as a 3-bit number (0-7), the unit of this input is 300K, so you can input between 0K and 2100K.
@@ -58,6 +49,16 @@ Every physics simulation is useless if its units are not addressed.
 
 ## Chaining multiple units together
 The goal of this project was to create a circuit that could be chained together to form a longer Ising chain. Bigger chains can be created by connecting the neighbour inputs N1 & N2 to the ouputs S0 and S3 of neighbouring units. In order to decrease correlations between different running circuits, it would be wise to either change the seed of the 32-bit LFSR or give each unit in the chain a different, random amount (several hundreds) of clock cycles before starting the simulation.
+
+## Circuit Overview
+The below image gives an overview of the main parts of the circuit and how they are connected.
+
+![](Overview.png)
+
+### 32-bit LFSR
+### Stage I: Calculating the energy change of the system
+### Stage II: Calculating the acceptance rate of the spin-flip
+### Other stuff
 
 ## What is Tiny Tapeout?
 
