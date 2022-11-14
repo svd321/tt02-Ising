@@ -2,7 +2,7 @@
 
 # What is this project about?
 
-This is a fully self-contained physics simulation.
+This is a fully self-contained physics simulation of a (relatively simple) system.
 The circuit implements the monte-carlo algorithm for 4 spins in a 1D [Ising model](https://en.wikipedia.org/wiki/Ising_model) (or Ising chain) in an external field.
 The idea is that N of these circuits could be chained together to simulate a 1D Ising model with 4N spins.
 
