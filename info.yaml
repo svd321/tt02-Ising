@@ -34,12 +34,12 @@ documentation:
     - J, The sign of the NN coupling constant J (+/1 or -/0).
     - H, Value of the coupling to the external field H (1 or 0).
   outputs:
-    - segment a, Spin 0 (1 if spin is up).
-    - segment b, Spin 1 (1 if spin is up).
-    - segment c, Spin 2 (1 if spin is up).
-    - segment d, Spin 3 (1 if spin is up).
-    - segment e, Neighbour 2 (1 if spin is up).
-    - segment f, Neighbour 1 (1 if spin is up).
+    - segment a, Spin 0.
+    - segment b, Spin 1.
+    - segment c, Spin 2.
+    - segment d, Spin 3.
+    - segment e, Neighbour 2.
+    - segment f, Neighbour 1.
     - none
-    - segment h, blinks every Monte Carlo step.
+    - segment h, MC Step Indicator.
 
