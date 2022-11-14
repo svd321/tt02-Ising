@@ -2,7 +2,8 @@
 
 # What is this project about?
 
-This project implements a monte-carlo simulation of 4 spins of a 1D [Ising model](https://en.wikipedia.org/wiki/Ising_model) (or Ising chain) in an external field.
+This is a fully self-contained physics simulation.
+The circuit implements the monte-carlo algorithm for 4 spins in a 1D [Ising model](https://en.wikipedia.org/wiki/Ising_model) (or Ising chain) in an external field.
 The idea is that N of these circuits could be chained together to simulate a 1D Ising model with 4N spins.
 
 My goal was to create a circuit that runs all steps of the Metropolis-Hastings algorithm, so no external lookup-tables or random numbers are needed. 
