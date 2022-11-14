@@ -3,13 +3,12 @@
 # What is this project about?
 
 This is a fully self-contained physics simulation of a (relatively simple) system.
-The circuit implements the monte-carlo algorithm for 4 spins in a 1D [Ising model](https://en.wikipedia.org/wiki/Ising_model) (or Ising chain) in an external field.
-The idea is that N of these circuits could be chained together to simulate a 1D Ising model with 4N spins.
+
+It implements the metropolis-Hastings monte carlo algorithm for 4 spins in a 1D [Ising model](https://en.wikipedia.org/wiki/Ising_model) (or Ising chain) with an external field and 2 "external" neighbours. The idea is that N of these circuits could be chained together to simulate a 1D Ising model with 4N spins.
 
 My goal was to create a circuit that runs all steps of the Metropolis-Hastings algorithm, so no external lookup-tables or random numbers are needed. 
-
-All external factors (neighbour spins, coupling constants and temperature) are input through the 7 inputs, together with the clock. The 7 segment display
-is used to represent the state of the mini-Ising chain.
+A clock input on pin 0 is necessary, the other 7 inputs are used to define the evironmental factors (temperature, coupling constants). The 7 segment display
+is used to represent the state of the mini-Ising chain (including the external spins). The clock frequency is not really important, 10 clock cycles are needed to create the random number, so the actual MC step frequency is 1/10th of the input clock frequency.
 
 This project started off in wokwi, as I have no experience with a HDL (or logic circuit design for that matter). Halfway through I realised it might have been better to use a HDL, but I was not sure I would make the deadline if I still had to learn verilog, so I managed to muscle through.
 
