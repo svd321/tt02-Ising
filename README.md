@@ -29,6 +29,9 @@ This project started off in wokwi, as I have no experience with a HDL (or logic 
 |7 |H    |The value of the external field coupling H (1 or 0)|
 
 ## Outputs
+
+![](7-seg.png)
+
 |Pin|Name |Function                     |
 |--|------|-----------------------------|
 |0 |S0    |Status of spin 0             |
@@ -39,6 +42,7 @@ This project started off in wokwi, as I have no experience with a HDL (or logic 
 |5 |N1    |Status of neighbour 1        |
 |6 |/     |                             |
 |7 |MC_CLK|Indicates a MC step          |
+
 
 ## A note on units
 Every physics simulation is useless if its units are not addressed.
