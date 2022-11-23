@@ -11,7 +11,7 @@ A clock input on pin 0 is necessary, the other 7 inputs are used to define the e
 is used to represent the state of the mini-Ising chain (including the external spins). The clock frequency is not really important, 10 clock cycles are needed to create the random number, so the actual MC step frequency is 1/10th of the input clock frequency.
 
 
-<img src="Algorithm_view2.png" width="1000">
+<img src="Algorithm_view3.png" width="1000">
 
   
 This project started off in wokwi, as I have no experience with a HDL (or logic circuit design for that matter). Halfway through I realised it might have been better to use a HDL, but I was not sure I would make the deadline if I still had to learn verilog, so I managed to muscle through.
