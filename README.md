@@ -53,7 +53,7 @@ The goal of this project was to create a circuit that could be chained together 
 ## Circuit Overview
 The below image gives an overview of the main parts of the circuit and how they are connected.
 
-![](Overview.png)
+![](Overview_2.png)
 
 ### 32-bit LFSR
 ### Stage I: Calculating the energy change of the system
