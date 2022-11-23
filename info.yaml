@@ -18,12 +18,12 @@ documentation:
   title:        "4-spin Ising Chain Simulation"      # Project title
   description:  "A self-contained physics simulation. This circuit simulates 4 spins of an Ising chain in  an external field." # Short description of what your project does
   how_it_works: "It runs the Metropolis-Hastings monte-carlo algorithm to simulate 4 Ising spins in a linear chain with two external neighbours and an external field. Every monte-carlo step (10 clock cycles) a random number is created through a 32-bit LFSR and is compared to an 8-bit representations of the acceptance probability of a random spin flip."# Longer description of how the project works
-  how_to_test:  "When you only enable one of the neighbours and leave everything else 0, the system will evolve into a ground state with every other spin pointing up."      # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
-  external_hw:  ""      # Describe any external hardware needed
+  how_to_test:  "The design can be tested by enabling one of the neighbours (input 4 or 5) and leave all other inputs low, the system will evolve into a ground state with every other spin pointing up."      # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
+  external_hw:  "None"      # Describe any external hardware needed
   language:     "wokwi" # other examples include Verilog, Amaranth, VHDL, etc
   doc_link:     "README.md"      # URL to longer form documentation, eg the README.md in your repository
   clock_hz:     20       # Clock frequency in Hz (if required)
-  picture:      "Overview.png"      # relative path to a picture in your repository
+  picture:      "Overview_2.png"      # relative path to a picture in your repository
   inputs:               # a description of what the inputs do
     - clock, clock input.
     - T0, LSB of the 3-bit temperature representation.
@@ -31,8 +31,8 @@ documentation:
     - T2, MSB of the 3-bit temperature.
     - N1, Value of neighbour 1 (up/1 or down/0).
     - N2, Value of neighbour 2 (up/1 or down/0).
-    - J, The sign of the NN coupling constant J (+/1 or -/0).
-    - H, Value of the coupling to the external field H (1 or 0).
+    - J, The sign of the NN coupling constant J.
+    - H, Value of the coupling to the external field H.
   outputs:
     - segment a, Spin 0.
     - segment b, Spin 1.
