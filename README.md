@@ -43,6 +43,15 @@ This project started off in wokwi, as I have no experience with a HDL (or logic 
 |6 |/     |                             |
 |7 |MC_CLK|Indicates a MC step          |
 
+## Ground States
+
+When the temperature inputs are all set low, meaning at T=0K the system will eventually evolve into its ground state (i.e. the state with lowest energy).
+For the system with 4 spins, no external field and the two external spins, four unqiue ground states can be identified, depending on the environment variables.
+Their representations and the corresponding input settings can be found in the following picture.
+
+![](Ground states.png)
+
+For other combinations of N1, N2 and J, there is no unique ground state and the system will never relax, even though it is at 0K.
 
 ## A note on units
 Every physics simulation is useless if its units are not addressed.
