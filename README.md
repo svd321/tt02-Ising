@@ -2,7 +2,7 @@
 
 # What is this project about?
 
-This is a fully self-contained physics simulation of a (relatively simple) system.
+This is a fully self-contained physics simulation of a (relatively simple) system of interacting spins.
 
 It implements the metropolis-Hastings monte carlo algorithm for 4 spins in a 1D [Ising model](https://en.wikipedia.org/wiki/Ising_model) (or Ising chain) with an external field and 2 "external" neighbours. The idea is that N of these circuits could be chained together to simulate a 1D Ising model with 4N spins.
 
