@@ -56,7 +56,7 @@ For other combinations of N1, N2 and J, there is no unique ground state and the 
 ## A note on units
 Every physics simulation is useless if its units are not addressed.
 * Temperature: Temperature is input as a 3-bit number (0-7), the unit of this input is 300K, so you can input between 0K and 2100K.
-* Energy: Energy is expressed in units kT at room temperature, which can be approximated by 25meV.
+* Energy: Energy is expressed in units k * 300K, which can be approximated by 25meV.
 * Nearest Neighbour coupling constant J: controlled by input 6, this coupling constants unit is that of energy.
 * External field coupling constant H: controlled by input 7, this parameter is also in energy units.
 
@@ -69,9 +69,13 @@ The below image gives an overview of the main parts of the circuit and how they 
 ![](Overview_2.png)
 
 ### 32-bit LFSR
+The basis of every monte carlo (MC) technique is the sampling of (pseudo-)random numbers. In this implementation, this is achieved by creating a Linear Feedback Shift Register (LFSR). With 32 bits and taps at bits 32, 22, 2 and 1 it has the maximum period of 4294967295 cycles. Each Monte Carlo step, 10 bits of random data are needed, therefore the LFSR is cycled 10 times per monte carlo step. This LFSR uses XOR gates, which means that all zeroes is an illegal state. This state is dealt with explicitly, if this state would occur, a seed value is supplied to all the inputs. In this case, the seed is the binary ASCII representation of "RAND", i.e. 01010010010000010100111001000100.
+![](LFSR_32.png)
+### Spin and Neighbour Selection
+Each MC step, a random spin is selected to be updated. This consumes two of the 10 random bits. The selected spin also affects the inputs of Stage I: the energy change of the spin flip depends on the state of the neighbouring spins.
 ### Stage I: Calculating the energy change of the system
 ### Stage II: Calculating the acceptance rate of the spin-flip
-### Other stuff
+### Comparator
 
 ## What is Tiny Tapeout?
 
