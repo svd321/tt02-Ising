@@ -1,5 +1,7 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg)
 
+<img src="singlePictureSummary.png" width="1000">
+
 # What is this project about?
 
 This is a fully self-contained physics simulation of a (relatively simple) system of interacting spins.
